@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace MIcroRabbit.Transfer.Api.Migrations
+namespace MicroRabbit.Transfer.Data.Migrations
 {
     [DbContext(typeof(TransferDbContext))]
     partial class TransferDbContextModelSnapshot : ModelSnapshot
@@ -24,11 +24,11 @@ namespace MIcroRabbit.Transfer.Api.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<decimal>("Amount");
-
                     b.Property<int>("FromAccount");
 
                     b.Property<int>("ToAccount");
+
+                    b.Property<decimal>("TransferAmount");
 
                     b.HasKey("Id");
 

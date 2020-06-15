@@ -32,7 +32,7 @@ namespace MicroRabbit.Banking.Api
         {
             services.AddDbContext<BankingDbContext>(options => 
             {
-                options.UseSqlServer(Configuration.GetConnectionString("BankingDbConnection"), b => b.MigrationsAssembly("MicroRabbit.Banking.Api"));
+                options.UseSqlServer(Configuration.GetConnectionString("BankingDbConnection"));
             });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

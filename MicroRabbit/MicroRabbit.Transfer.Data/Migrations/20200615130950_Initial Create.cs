@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace MIcroRabbit.Transfer.Api.Migrations
+namespace MicroRabbit.Transfer.Data.Migrations
 {
     public partial class InitialCreate : Migration
     {
@@ -15,7 +15,7 @@ namespace MIcroRabbit.Transfer.Api.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     FromAccount = table.Column<int>(nullable: false),
                     ToAccount = table.Column<int>(nullable: false),
-                    Amount = table.Column<decimal>(nullable: false)
+                    TransferAmount = table.Column<decimal>(nullable: false)
                 },
                 constraints: table =>
                 {

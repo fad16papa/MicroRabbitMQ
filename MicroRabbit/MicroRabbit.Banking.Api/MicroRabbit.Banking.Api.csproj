@@ -6,13 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\20200612072640_Initial Create.cs" />
-    <Compile Remove="Migrations\20200612072640_Initial Create.Designer.cs" />
-    <Compile Remove="Migrations\20200612072755_Initial Create.cs" />
-    <Compile Remove="Migrations\20200612072755_Initial Create.Designer.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="MediatR" Version="7.0.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />

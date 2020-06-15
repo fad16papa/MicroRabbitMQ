@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace MicroRabbit.Banking.Api.Migrations
+namespace MicroRabbit.Banking.Data.Migrations
 {
     public partial class InitialCreate : Migration
     {
